@@ -122,17 +122,16 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   }
   .roster-title-bar {
-    background: #F7F7F7; border-bottom: 2px solid #1A1A1A;
-    padding: 8px 14px 10px; display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px 8px; display: flex; align-items: center; justify-content: space-between;
   }
   .roster-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px; font-weight: 700; letter-spacing: 0.22em;
-    text-transform: uppercase; color: var(--text-primary);
+    font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--text-dim);
   }
   .roster-count {
     font-family: 'Roboto', sans-serif;
-    font-size: 11px; color: var(--text-dim); font-weight: 600; letter-spacing: 0.08em;
+    font-size: 10px; color: var(--text-dim); font-weight: 600; letter-spacing: 0.08em;
   }
   .col-head {
     display: grid;
@@ -206,12 +205,12 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   }
   .schedule-title-bar {
-    background: #F7F7F7; border-bottom: 2px solid #1A1A1A; padding: 8px 14px 10px;
+    padding: 10px 14px 8px;
   }
   .schedule-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px; font-weight: 700; letter-spacing: 0.22em;
-    text-transform: uppercase; color: var(--text-primary);
+    font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--text-dim);
   }
   .game-row {
     display: flex; align-items: center; padding: 8px 14px;
@@ -273,12 +272,12 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   }
   .staff-title-bar {
-    background: #F7F7F7; border-bottom: 2px solid #1A1A1A; padding: 8px 14px 10px;
+    padding: 10px 14px 8px;
   }
   .staff-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px; font-weight: 700; letter-spacing: 0.22em;
-    text-transform: uppercase; color: var(--text-primary);
+    font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--text-dim);
   }
   .staff-row {
     display: flex; align-items: center;
@@ -354,20 +353,17 @@
     .game-row { padding: 12px 22px; }
   }
 
-  /* Inter font tuning: Medium 500, tracking -0.04em, tnum+lnum, kerning */
-  body, .s, .s-tot, .sec-stat, .p-num, .p-name, .p-pos,
-  .team-score, .team-abbr, .team-record, .final-badge, .game-period, .game-meta,
-  .q-table th, .q-table td,
-  .sm-val, .sm-pct, .sm-label, .sm-head-team, .sm-head-title,
-  .totals-fix-inner, .sec-fix-inner, .fix-inner,
-  .section-title, .box-label, .dnp-cell, .t-btn {
-    letter-spacing: -0.02em;
-    line-height: 1.0;
+  /* Roboto font tuning: applied to every text node */
+  body, body * {
     font-feature-settings: "tnum" 1, "lnum" 1, "kern" 1;
   }
-  .s, .s-tot, .sec-stat, .p-num, .p-name,
-  .q-table td, .q-table th,
-  .sm-val, .sm-pct {
+  body {
+    letter-spacing: -0.02em;
+    line-height: 1.0;
+  }
+  .p-num, .p-name, .p-name-en, .p-grade, .p-ht, .p-school,
+  .roster-count, .game-date, .game-time, .game-opponent, .game-result,
+  .meta-chip, .col-head, .tab-label, .pos-tag {
     font-weight: 500;
   }
 
