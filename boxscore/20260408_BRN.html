@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>JPN 90 - BRN 79 | AST 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #F4F4F4;
@@ -17,15 +17,15 @@
     --header-bg: #1A1A1A;
     --section-bg: #F0F0F0;
     --section-text: #555555;
-    --cell-h: 27px;
-    --sec-h: 22px;
+    --cell-h: 32px;
+    --sec-h: 24px;
     --fix-w: 135px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body {
     background: var(--bg);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto Condensed', 'Noto Sans JP', sans-serif;
     padding-bottom: 50px;
     min-height: 100vh;
   }
@@ -67,18 +67,18 @@
   }
   .score-team.right .team-info { align-items: flex-end; }
   .team-abbr {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 13px; font-weight: 700; letter-spacing: 0.1em;
     color: rgba(255,255,255,0.6); line-height: 1;
     text-transform: uppercase;
   }
   .team-record {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 9px; color: rgba(255,255,255,0.3);
     letter-spacing: 0.05em; line-height: 1.2;
   }
   .team-score {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 40px; font-weight: 700; line-height: 1;
     color: white; letter-spacing: -0.02em;
     flex-shrink: 0; font-variant-numeric: tabular-nums;
@@ -90,13 +90,13 @@
     flex-shrink: 0; padding: 0 8px; gap: 2px;
   }
   .final-badge {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 11px; font-weight: 700; letter-spacing: 0.18em;
     color: rgba(255,255,255,0.55);
     text-transform: uppercase;
   }
   .game-period {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 9px; color: rgba(255,255,255,0.25);
     letter-spacing: 0.08em;
   }
@@ -106,7 +106,7 @@
     gap: 6px;
   }
   .game-meta {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px; letter-spacing: 0.1em;
     color: rgba(255,255,255,0.3);
     text-transform: uppercase;
@@ -121,10 +121,10 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   }
   .section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
     color: var(--text-dim); text-transform: uppercase;
-    padding: 6px 14px;
+    padding: 7px 12px;
     background: #FAFAFA;
     border-bottom: 1px solid var(--border);
   }
@@ -132,7 +132,7 @@
     width: 100%; border-collapse: collapse;
   }
   .q-table th {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
     color: var(--text-dim); text-align: center;
     padding: 5px 0; border-bottom: 1px solid var(--border);
@@ -141,7 +141,7 @@
   .q-table th:first-child { text-align: left; padding-left: 14px; width: 90px; border-right: 1px solid rgba(0,0,0,0.1); }
   .q-table th:last-child { border-right: none; }
   .q-table td {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px; font-weight: 600;
     color: var(--text-primary); text-align: center;
     padding: 7px 0; border-bottom: 1px solid var(--border);
@@ -161,10 +161,10 @@
     overflow: hidden;
   }
   .box-label {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
     color: var(--text-dim); text-transform: uppercase;
-    padding: 6px 14px;
+    padding: 7px 12px;
     background: #FAFAFA;
     border-bottom: 1px solid var(--border);
   }
@@ -196,13 +196,13 @@
   }
   .sec-fix-inner {
     display: flex; align-items: center;
-    height: var(--sec-h); padding: 0 10px;
+    height: var(--sec-h); padding: 0 12px;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 10px; font-weight: 700;
     color: var(--section-text);
   }
   .sec-stat {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
     color: var(--text-dim); text-align: right;
     width: 42px; min-width: 42px;
@@ -221,10 +221,10 @@
 
   .fix-inner {
     display: flex; align-items: center; gap: 4px;
-    height: var(--cell-h); padding: 0 8px;
+    height: var(--cell-h); padding: 0 10px;
   }
   .p-num {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 11px; font-weight: 600; color: var(--text-dim);
     min-width: 18px; flex-shrink: 0; text-align: center; font-variant-numeric: tabular-nums;
   }
@@ -235,13 +235,13 @@
     flex: 1;
   }
   .p-pos {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 9.5px; font-weight: 600; color: var(--text-dim);
     flex-shrink: 0;
   }
 
   .s {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 12px; font-weight: 400;
     color: var(--text-primary); text-align: right;
     width: 42px; min-width: 42px;
@@ -263,7 +263,7 @@
   }
   .dnp-row td.fix { background: var(--white); z-index: 4; }
   .dnp-cell {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
     color: var(--text-dim); vertical-align: middle;
     padding-left: 8px;
@@ -277,7 +277,7 @@
   }
   .t-btn {
     flex: 1; border: none; background: none; cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px; font-weight: 700; letter-spacing: 0.12em;
     color: var(--text-dim);
     transition: all 0.15s;
@@ -294,20 +294,20 @@
   }
 
   .totals-row td {
-    height: 28px;
+    height: 32px;
     background: #F7F7F7;
     border-top: 2px solid var(--border-dark);
   }
   .totals-row td.fix { background: #F7F7F7; z-index: 4; }
   .totals-fix-inner {
     display: flex; align-items: center;
-    height: 28px; padding: 0 8px;
-    font-family: 'Inter', sans-serif;
+    height: 32px; padding: 0 8px;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 11px; font-weight: 700; letter-spacing: 0.05em;
     color: var(--text-primary);
   }
   .s-tot {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 12px; font-weight: 700;
     color: var(--text-primary); text-align: right;
     width: 42px; min-width: 42px;
